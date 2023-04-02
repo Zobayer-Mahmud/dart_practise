@@ -4,6 +4,7 @@ class Employee {
 
   int? get id => _id;
   String? get name => _name;
+  set id(int? id) => _id = id;
 
   void setResult({int? id, String? name}) {
     _id = id ?? 1;

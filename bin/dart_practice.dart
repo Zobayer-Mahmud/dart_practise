@@ -12,6 +12,7 @@ void main(List<String> arguments) {
   Employee employee1 = Employee();
   Employee employee2 = Employee();
   employee1.setResult(id: 10, name: "Zobayer");
+  employee1.id = 11;
   employee2.setResult(id: 11, name: "SH");
   employee1.getResult();
   employee2.getResult();

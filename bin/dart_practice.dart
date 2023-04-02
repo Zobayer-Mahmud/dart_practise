@@ -3,6 +3,8 @@ import 'package:dart_practice/file_import.dart' as dart_practice;
 import 'package:dart_practice/csv_file_write.dart' as csvFile;
 import 'package:dart_practice/inheritance_constructor.dart';
 import 'package:dart_practice/polymorphism.dart';
+import 'package:dart_practice/random_password_generator.dart';
+import 'package:dart_practice/static_variable.dart';
 import 'package:dart_practice/super_in_constructor.dart';
 
 void main(List<String> arguments) {
@@ -26,10 +28,19 @@ void main(List<String> arguments) {
 
   //polymorphism
 
-  ParentClass parentClass = ParentClass();
+  /* ParentClass parentClass = ParentClass();
   ChildrenClass childrenClass = ChildrenClass();
   ChildClass childClass = ChildClass();
-  // parentClass.func();
-  //childrenClass.func();
-  childClass.func();
+  parentClass.func();
+ childrenClass.func();
+  childClass.func();*/
+
+  //Static Variable
+/*  StaticEmployee staticEmployee = StaticEmployee();
+  StaticEmployee staticEmployee2 = StaticEmployee();
+  StaticEmployee staticEmployee3 = StaticEmployee();
+  staticEmployee3.totalEmployee();*/
+
+  print(RandomPasswordGenerator.generatePassword());
+  print(RandomPasswordGenerator.generatePassword().length);
 }

@@ -5,11 +5,12 @@ class Employee {
   int? get id => _id;
   String? get name => _name;
 
-  void setId(int? id) {
-    _id = id;
+  void setResult({int? id, String? name}) {
+    _id = id ?? 1;
+    _name = name ?? "Nam nai";
   }
 
-  void setName(String? name) {
-    _name = name;
+  void getResult() {
+    print("ID:$id, Name:$name");
   }
 }

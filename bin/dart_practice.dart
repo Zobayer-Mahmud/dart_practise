@@ -11,14 +11,8 @@ void main(List<String> arguments) {
 
   Employee employee1 = Employee();
   Employee employee2 = Employee();
-  Employee employee3 = Employee();
-  employee1.setId(10);
-  employee2.setId(10);
-  employee3.setId(10);
-  employee1.setName("h");
-  employee2.setName("b");
-  employee3.setName("d");
-  print(employee1.name);
-  print(employee2.name);
-  print(employee3.name);
+  employee1.setResult(id: 10, name: "Zobayer");
+  employee2.setResult(id: 11, name: "SH");
+  employee1.getResult();
+  employee2.getResult();
 }

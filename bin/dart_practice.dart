@@ -2,6 +2,7 @@ import 'package:dart_practice/encapsulation.dart';
 import 'package:dart_practice/file_import.dart' as dart_practice;
 import 'package:dart_practice/csv_file_write.dart' as csvFile;
 import 'package:dart_practice/inheritance_constructor.dart';
+import 'package:dart_practice/polymorphism.dart';
 import 'package:dart_practice/super_in_constructor.dart';
 
 void main(List<String> arguments) {
@@ -20,6 +21,15 @@ void main(List<String> arguments) {
 
 // Super in constructor
 
-  MacLap macLap = MacLap();
-  macLap.show();
+  /* MacLap macLap = MacLap();
+  macLap.show();*/
+
+  //polymorphism
+
+  ParentClass parentClass = ParentClass();
+  ChildrenClass childrenClass = ChildrenClass();
+  ChildClass childClass = ChildClass();
+  // parentClass.func();
+  //childrenClass.func();
+  childClass.func();
 }
